@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Firebase Hosting</title>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <style>
+    img {
+      max-width: 500px;
+      max-height: 220px
+    }
+  </style>
+
+
+
+
+
+
+  <style media="screen">
+    body {
+      background: #ECEFF1;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #message {
+      background: white;
+      max-width: 360px;
+      margin: 100px auto 16px;
+      padding: 32px 24px;
+      border-radius: 3px;
+    }
+
+    #message h2 {
+      color: #ffa100;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    #message h1 {
+      font-size: 22px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 0 0 16px;
+    }
+
+    #message p {
+      line-height: 140%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    #message a {
+      display: block;
+      text-align: center;
+      background: #039be5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 4px;
+    }
+
+    #message,
+    #message a {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    #load {
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+
+      body,
+      #message {
+        margin-top: 0;
+        background: white;
+        box-shadow: none;
+      }
+
+      body {
+        border-top: 16px solid #ffa100;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <p id="load">Firebase SDK Loading&hellip;</p>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Firebase Cookbook</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">One more separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="text-center">
+        <img src="img/firebase.png">
+        <p style="margin-top:-50px">Loging using your favorite method</p>
+      </div>
+      <br>
+      <form class="form-inline text-center">
+        <div class="form-group">
+          <label class="sr-only" for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button id="login" type="button" class="btn btn-default">Sign in</button>
+        <button id="logout" type="button" class="btn btn-default">Logout</button>
+      </form>
+      <br>
+      <br>
+      <div class="text-center">Or</div>
+      <br>
+      <div class="text-center">
+        <a class="btn btn-social btn-lg btn-github" style="width: 260px" id='anonymousLogin'>
+          <span class="fa fa-snapchat-ghost"></span> Sign in anonymously
+        </a>
+        <br>
+        <br>
+        <a class="btn btn-social btn-lg btn-google" style="width: 260px" id="googleLogin">
+          <span class="fa fa-google"></span> Sign in with Google
+        </a>
+        <br>
+        <br>
+        <a class="btn btn-social btn-lg btn-facebook" style="width: 260px" id="fcbLogin">
+          <span class="fa fa-facebook"></span> Sign in with Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+
+  <script>
+    let signIn = document.getElementById('login');
+    let logout = document.getElementById('logout');
+    let anonLogin = document.getElementById('anonymousLogin');
+    let facebookLogin = document.getElementById('fcbLogin');
+    let googleLogin = document.getElementById('googleLogin');
+
+    signIn.addEventListener('click', (ev) => {
+      let email = document.getElementById('email').value;
+      let password = document.getElementById('password').value;
+
+      firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(user => {
+          console.log(email, password, 'logined');
+          var user = firebase.auth().currentUser;
+          console.log(user)
+        }).catch(function (error) {
+          console.log(email, password, 'login error');
+        }, false);
+    });
+
+    logout.addEventListener('click', (ev) => {
+      firebase.auth().signOut()
+        .then(() => {
+          console.log('you are logout');
+          var user = firebase.auth().currentUser;
+          console.log('user ' + user);
+        }).catch(err => {
+          console.log(err);
+        });
+    });
+
+
+    anonLogin.addEventListener('click', () => {
+      firebase.auth().signInAnonymously().catch(function (error) {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
+
+      firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+          var isAnonymous = user.isAnonymous;
+          var uid = user.uid;
+          console.log('isAnonymous ' + isAnonymous)
+          console.log('uid ' + uid)
+        } else {
+          // User is signed out.
+          console.log('user is logout');
+        }
+      });
+
+    });
+
+    facebookLogin.addEventListener('click', () => {
+      console.log("will connect using facebook");
+      // 1. Get a FacebookAuthProvider instance.
+      let facebookProvider = new firebase.auth.FacebookAuthProvider();
+      //2. Add some permissions & scopes (optional)
+      facebookProvider.addScope('public_profile');
+      //3. Make the call
+      firebase.auth().signInWithPopup(facebookProvider).then(function (result) {
+        var user = result.user;
+        console.log(result);
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }, false);
+
+    googleLogin.addEventListener('click', () => {
+      //1. Get a TwitterAuthProvider instance.
+      var googleProvider = new firebase.auth.GoogleAuthProvider();
+
+      firebase.auth().signInWithPopup(googleProvider).then(function (result) {
+        console.log(result);
+        var user = result.user;
+      }).catch(function (error) {
+        //TODO:  Handle Errors here.
+        console.log(error);
+      });
+    });
+    
+  </script>
+
+</body>
+
+</html>

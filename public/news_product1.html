@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header 開始 -->
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Andy的後花園</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="news_tech1.html">知識新知 <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="news_product1.html">商品介紹</a>
+                            <a class="nav-item nav-link" href="news_about1.html">公司簡介</a>
+                            <a class="nav-item nav-link " href="#">與我聯絡</a>
+                        </div>
+                    </div>
+                    <a href="register.html"><button type="button " class="btn btn-success mr-2 ">註冊</button></a>
+                    <a href="login.html"><button type="button" class="btn btn-primary mr-2 ">登入</button></a>
+                    <a href="news_detail.html"><button type="button" class="btn btn-primary ">學習</button></a>
+                </nav>
+            </div>
+        </div>
+        <!-- header 結束 -->
+
+        <!-- 輪播 開始 -->
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/1500/200?random=25" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1500/200?random=250" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1500/200?random=252" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 輪播 結束 -->
+
+        <div class="row mt-3">
+            <!-- 左側邊欄 開始 -->
+            <div class="col-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="news_product1.html" target="_blank">Module IPC 工業電腦</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="news_product1.html" target="_blank">Server 伺服器 </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="news_product1.html" target="_blank">AI 人工智慧 </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="news_product1.html" target="_blank">Others </a>
+                    </li>
+                    <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+                </ul>
+            </div>
+            <!-- 左側邊欄 結束 -->
+
+            <!-- 右側邊欄 開始 -->
+            <div class="col-9">
+                <div class="row">
+                    <div class="card col-3">
+                        <img src="pic/IPC-240_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">IPC-240 </p>
+                            <a href="https://advdownload.advantech.com/productfile/PIS/IPC-240/file/IPC-220_240_DS20191227103815.pdf"
+                                target="_blank">產品型錄</a>
+                            <p class="card-text"> </p>
+                            <a href="pdf/pce-2129_a101-2_20181129_ecop-1.pdf" target="_blank">電路圖</a>
+                            <p class="card-text">Compact Industrial Computer System with 6th/7th Gen Intel® Core™ i CPU
+                                Socket (LGA 1151)</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <img src="pic/AIIS-5410P.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">AIIS-5410P</p>
+                            <a href="https://advdownload.advantech.com/productfile/PIS/AIIS-5410P/Product%20-%20Datasheet/AIIS-5410P_DS(06.21.19)20190624111403.pdf"
+                            target="_blank">產品型錄</a>
+                            <p class="card-text"> </p>
+                        <a href="pdf/AIIS-5410P_A101-4_FINAL_ECOM-116059_20160301.pdf" target="_blank">電路圖</a>
+                            <p class="card-text">Fanless Vision System with Intel® Core™ i Processor, 4-Channel GigE PoE
+                                Camera Interface, and PCIe Slot</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3">
+                        <img src="pic/MIC-770.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">MIC-770</p>
+                            <a href="https://advdownload.advantech.com/productfile/PIS/MIC-770/file/MIC-770_DS(012220)20200130181726.pdf"
+                            target="_blank">產品型錄</a>
+                            <p class="card-text"> </p>
+                        <a href="pdf/MIC-7700_A101-2_20170303_ECOP-121317_ECOP-121318.pdf" target="_blank">電路圖</a>
+                            <p class="card-text">Compact Fanless System with 8th Gen Intel® Core™ i CPU Socket (LGA
+                                1151)</p>
+
+                        </div>
+                    </div>
+                    <div class="card col-3">
+
+                        <img src="pic/AIMC-3422.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">AIMC-3422</p>
+                            <a href="https://advdownload.advantech.com/productfile/PIS/AIMC-3422/Product%20-%20Datasheet/AiMC-342220180910102255.pdf"
+                            target="_blank">產品型錄</a>
+                            <p class="card-text"> </p>
+                        <a href="pdf/PCE-3029_A101-2_20151207_ECOP-110270_ECOP-110289.pdf" target="_blank">電路圖</a>
+                            <p class="card-text">Micro Computer with Intel® Core™ i7/i5/i3 Processor, Intel® H110
+                                Chipset, 5 x Expansion Slots, and 300W 80PLUS PSU</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- 右側邊欄 結束 -->
+        </div>
+
+        <!-- footer 開始 -->
+        <div class="row">
+            <div class="col-12">
+                <footer class="footer mt-auto py-3">
+                    <div class="container">
+                        <span class="text-muted">Place sticky footer content here.</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- footer 結束 -->
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

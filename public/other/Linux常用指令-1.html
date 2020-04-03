@@ -1,0 +1,804 @@
+﻿<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href=file7721.htm>
+<link rel=File-List href="file7721.files/filelist.xml">
+<style type="text/css">
+
+    h4 
+    {
+        text-align: left;
+    }
+
+@media screen 
+{
+
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:hidden;
+		display:none;
+   }   
+}
+
+@media print 
+{
+	.headerLineTitle
+	{
+		width:1.5in;
+		display:inline-block;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+	}
+
+	.headerLineText
+	{
+		display:inline;
+		margin:0in;
+		margin-bottom:.0001pt;
+		font-size:11.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:normal;
+	}
+
+   .pageHeader
+   {
+		font-size:14.0pt;
+		font-family:"Calibri","sans-serif";
+		font-weight:bold;
+		visibility:visible;
+		display:block;
+   }
+
+}
+</style>
+</head>
+
+<body lang=zh-TW style='font-family:Calibri;font-size:12.0pt'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:9.3763in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0215in;width:2.3597in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:17.0pt'>Linux 常用指令 (1)</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0409in;margin-left:.0215in;width:1.8381in'>
+
+<p style='margin:0in;font-size:9.0pt;color:gray'><span style='font-family:Calibri'>2019</span><span
+style='font-family:PMingLiU'>年</span><span style='font-family:Calibri'>3</span><span
+style='font-family:PMingLiU'>月</span><span style='font-family:Calibri'>25</span><span
+style='font-family:PMingLiU'>日</span></p>
+
+<p style='margin:0in;font-size:9.0pt;color:gray'><span style='font-family:PMingLiU'>上午</span><span
+style='font-family:Calibri'> 07:47</span></p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.4902in;margin-left:0in;width:9.3763in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2017/01/linux-1.html#main">跳到主要內容 </a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>搜尋此網誌 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:20.0pt'><a
+href="http://tw-hkt.blogspot.com/"><span style='font-weight:bold'>HKT 線上教室 </span></a></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>HKT
+中文開放式課程, iOS , Swift Kinect </span><span style='font-family:PMingLiU'>教學</span><span
+style='font-family:Calibri'>, Android Studio </span><span style='font-family:
+PMingLiU'>教學</span><span style='font-family:Calibri'>, Python </span><span
+style='font-family:PMingLiU'>教學</span><span style='font-family:Calibri'>,
+Django </span><span style='font-family:PMingLiU'>教學</span><span
+style='font-family:Calibri'>, Linux </span><span style='font-family:PMingLiU'>教學
+</span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>訂閱 </p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>訂閱這個網誌</span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>Follow by Email </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>Linux 常用指令 (1) </span></p>
+
+<ul type=disc style='margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in'>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>取得連結 </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Facebook </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Twitter </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Pinterest </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>以電子郵件傳送 </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>其他應用程式 </span></li>
+</ul>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'
+lang=zh-TW>作者： </span><a href="https://plus.google.com/106315661421751933087"><span
+style='font-family:PMingLiU' lang=zh-TW>侯光燦 </span></a><span style='font-family:
+Calibri' lang=zh-TW>- </span><a
+href="http://tw-hkt.blogspot.com/2017/01/linux-1.html"><span style='font-family:
+Calibri' lang=zh-TW>1</span><span style='font-family:PMingLiU' lang=zh-TW>月</span><span
+style='font-family:Calibri' lang=en-US> 21, 2017</span><span style='font-family:
+Calibri' lang=zh-TW> </span></a></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img src="file7721.files/image001.jpg" width=720
+height=478></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:12.0pt;color:#333333'>今天 KT 要來分享個的這個主題，KT 知道有些人很害怕。</p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:12.0pt;color:#333333'>可能看到標題，都不想點進來看，就想直接跳過這個課程，KT也沒有要騙大家，沒有故意要取類似『很漂亮裡面有正妹』的標題名字，騙大家進來。所以KT
+整理了一下，簡單幾個很重要的指令，希望大家都可以學會，用在工作或生活上。</p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:12.0pt;color:#333333'>但在這之前 KT先分享一下使用命令的心得，Linux
+一直不親民，不普羅大眾其中有一個很關鍵的原因就是大部份都是下指令，連安裝程式，也要先下解開壓縮包命令，然後指到安裝檔的目錄命令下，進行軟體安裝，而不是像窗戶那樣，滑鼠去點一下，下一步、下一步，完成安裝。
+而蘋果就更簡單了，一個圖示拖到另一個圖示，就完成安裝。</p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:12.0pt;color:#333333'>有些人就覺得這個很煩，這就是專業人士在用的，但就是因為這樣，所以KT，覺得下命令超帥的，單單開啟命令視窗，下幾個指令，就可以Hold住整場，這樣不是很帥嗎？不管是男生或女生操作，都可以馬上讓人眼睛為之一亮，所以你看到電影或是電視劇也常會安排男或女主角，在這黑色視窗下，打幾個字的橋段。</p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:12.0pt;color:#333333'>KT 以上講這麼多，希望可以引起你們學習下命令的渴望，不要排斥，擁抱自由Linux。</p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>開啟終端機</span></p>
+
+<p style='margin:0in'><img src="file7721.files/image002.png" width=720
+height=561></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>Linux
+常用文件指令</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt;color:#333333'
+lang=x-none><span style='background:#F7F7F7'>ls:
+列出目錄<br>
+cd：切換目錄<br>
+pwd：顯示目前的目錄<br>
+mkdir：建立新的目錄<br>
+cp: 複製文件或目錄<br>
+rm: 刪除文件或目錄<br>
+mv: 移動文件、資料夾，或修改名稱</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt;
+color:#333333' lang=x-none><span style='background:#F7F7F7'>cat:
+查看文件內容<br>
+head: 查看文件頭幾行內容<br>
+tail: 查看文件尾巴最後幾行內容</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>ls:
+列出目錄</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#333333;background:#F7F7F7'>$ ls<br>
+</span><span style='color:#969896;background:#F7F7F7'># 顯示當前路徑下有哪些資料</span><span
+style='color:#333333;background:#F7F7F7'><br>
+下載<span style='mso-spacerun:yes'>  </span>公共<span style='mso-spacerun:yes'> 
+</span>圖片<span style='mso-spacerun:yes'>  </span>影片<span
+style='mso-spacerun:yes'>  </span>文件<span style='mso-spacerun:yes'> 
+</span>桌面<span style='mso-spacerun:yes'>  </span>模板<span
+style='mso-spacerun:yes'>  </span>音樂</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>mkdir：建立新的目錄</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#969896;background:#F7F7F7'>#建立一個名稱為 demoshow1 和 demoshow2 的資料夾 </span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ mkdir demoshow1<br>
+$ mkdir demoshow1<br>
+</span><span style='color:#969896;background:#F7F7F7'>#驗證是否建立成功</span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ ls<br>
+demoshow1 demoshow2 下載<span style='mso-spacerun:yes'>  </span>公共<span
+style='mso-spacerun:yes'>  </span>圖片<span style='mso-spacerun:yes'> 
+</span>影片<span style='mso-spacerun:yes'>  </span>文件<span
+style='mso-spacerun:yes'>  </span>桌面<span style='mso-spacerun:yes'>  </span>模板 </span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>cd：切換目錄</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#969896;background:#F7F7F7'># 開啟進入demoshow1資料夾</span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ cd demoshow1</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt'><span
+style='color:#969896;background:#F7F7F7' lang=zh-TW>#
+使用文字編輯器，檔名為text1，隨便編寫一段文字，存檔後離開</span><span style='color:#333333;background:
+#F7F7F7' lang=x-none><br>
+</span><span style='color:#969896;background:#F7F7F7' lang=x-none># nano
+文字編輯器，如何操作，可以參考 KT 這篇文章：</span><span style='color:#333333;background:#F7F7F7'
+lang=x-none><br>
+$ nano text1</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt;
+color:#333333'><span style='background:#F7F7F7' lang=zh-TW>test</span><span
+style='background:#F7F7F7' lang=x-none>111111111111111<br>
+test222222222222222<br>
+test333333333333333<br>
+test444444444444444<br>
+test555555555555555<br>
+test666666666666666<br>
+test777777777777777<br>
+test888888888888888<br>
+test999999999999999</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt'><span
+style='color:#969896;background:#F7F7F7' lang=zh-TW># 回到上一層</span><span
+style='color:#333333;background:#F7F7F7' lang=x-none><br>
+$ cd ..</span></p>
+
+<ul type=disc style='margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in'>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle;margin-top:12pt;
+     margin-bottom:12pt;color:#333333'><span style='font-family:-apple-system;
+     font-size:12.0pt;color:#333333;background:white'>絕對路徑：<br>
+          </span><a href="http://www.bloggerads.net"><span style='font-family:
+     -apple-system;font-size:12.0pt;background:white'>BloggerAds 部落格行銷</span></a><span
+     style='font-family:-apple-system;font-size:12.0pt;color:black;background:
+     white'><br>
+          </span><a href="http://www.bloggerads.net"><span style='font-family:
+     -apple-system;font-size:12.0pt;background:white'>BloggerAds 部落格行銷</span></a><span
+     style='font-family:-apple-system;font-size:12.0pt;color:black;background:
+     white'><br>
+          </span><a href="http://www.bloggerads.net"><span style='font-family:
+     -apple-system;font-size:12.0pt;background:white'>BloggerAds 部落格行銷</span></a><span
+     style='font-family:-apple-system;font-size:12.0pt;color:black;background:
+     white'><br>
+          </span><span style='font-family:-apple-system;font-size:12.0pt;
+     color:#333333;background:white'>由根目錄/寫起，例如：/home/qq/demoshow1 這個目錄</span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle;margin-top:12pt;
+     margin-bottom:12pt;color:#333333'><span style='font-family:-apple-system;
+     font-size:12.0pt;background:white'>相對路徑：<br>
+          不是由/寫起，例如：…/qq/demoshow1 這個目錄</span></li>
+</ul>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>pwd：顯示目前位置的路徑</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt;color:#333333'
+lang=x-none><span style='background:#F7F7F7'>$ cd demoshow1<br>
+$ pwd<br>
+/home/qq/demoshow1</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>cp:
+複製文件或目錄</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#969896;background:#F7F7F7'># cp 來源檔 目的位置</span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ cp text1 ../demoshow2</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>rm:
+刪除文件或目錄</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#333333;background:#F7F7F7'>$ cd ..<br>
+</span><span style='color:#969896;background:#F7F7F7'># 注意 -rf
+為不詢問強制刪除資料夾內所有檔案，使用時要特別小心，別誤刪重要資料囉～～～</span><span style='color:#333333;
+background:#F7F7F7'><br>
+$ rm -rf demoshow1</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>cat:
+查看文件內容</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt;color:#333333'
+lang=x-none><span style='background:#F7F7F7'>$ cat</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>head:</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#969896;background:#F7F7F7'>#查看 text1 前兩行資料</span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ head -n 2 text1</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt;
+color:#333333'><span style='background:#F7F7F7' lang=zh-TW>test</span><span
+style='background:#F7F7F7' lang=x-none>111111111111111<br>
+test222222222222222</span></p>
+
+<p style='margin-top:18pt;margin-bottom:12pt;font-family:-apple-system;
+font-size:20.0pt;color:#333333'><span style='font-weight:bold;background:white'>tail:</span></p>
+
+<p style='margin:0in;font-family:Menlo;font-size:10.2pt' lang=x-none><span
+style='color:#969896;background:#F7F7F7'>#查看 text1 最後兩行資料</span><span
+style='color:#333333;background:#F7F7F7'><br>
+$ tail -n 2 text1</span></p>
+
+<p style='margin-top:0pt;margin-bottom:12pt;font-family:Menlo;font-size:10.2pt;
+color:#333333'><span style='background:#F7F7F7' lang=zh-TW>test</span><span
+style='background:#F7F7F7' lang=x-none>888888888888888<br>
+test999999999999999</span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/search/label/Linux">Linux </a></p>
+
+<ul type=disc style='margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in'>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>取得連結 </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Facebook </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Twitter </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>Pinterest </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>以電子郵件傳送 </span></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt'>其他應用程式 </span></li>
+</ul>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>留言</span></p>
+
+<ol type=1 style='margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in;font-family:Calibri;font-size:12.0pt;
+ font-weight:normal;font-style:normal'>
+ <li value=1 style='margin-top:0;margin-bottom:0;vertical-align:middle'><span
+     style='font-family:Calibri;font-size:12.0pt;font-weight:normal;font-style:
+     normal;font-family:Calibri;font-size:12.0pt' lang=zh-TW>阿迪</span><a
+     href="http://tw-hkt.blogspot.com/2017/01/linux-1.html?showComment=1523544272465#c961009447635736850"><span
+     style='font-family:Calibri;font-size:12.0pt;font-family:Calibri;
+     font-size:12.0pt' lang=zh-TW>星期四, 4月 12, 2018 10:44:00 下午</span></a><span
+     style='font-family:Calibri;font-size:12.0pt;font-weight:normal;font-style:
+     normal;font-family:Calibri;font-size:12.0pt' lang=zh-TW><br>
+          </span><span style='font-family:PMingLiU;font-size:12.0pt;font-weight:
+     normal;font-style:normal;font-family:PMingLiU;font-size:12.0pt'
+     lang=zh-TW>感謝分亨</span><span style='font-family:Calibri;font-size:12.0pt;
+     font-weight:normal;font-style:normal;font-family:Calibri;font-size:12.0pt'
+     lang=en-US><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt;font-family:PMingLiU;font-size:12.0pt' lang=zh-TW>回覆</span></a><a
+     href="https://www.blogger.com/delete-comment.g?blogID=2812925102198947622&amp;postID=961009447635736850"><span
+     style='font-family:PMingLiU;font-size:12.0pt;font-family:PMingLiU;
+     font-size:12.0pt' lang=zh-TW>刪除</span></a><span style='font-family:Calibri;
+     font-size:12.0pt;font-weight:normal;font-style:normal;font-family:Calibri;
+     font-size:12.0pt' lang=zh-TW><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt;font-family:PMingLiU;font-size:12.0pt' lang=zh-TW>回覆</span></a><span
+     style='font-family:Calibri;font-size:12.0pt;font-weight:normal;font-style:
+     normal;font-family:Calibri;font-size:12.0pt' lang=zh-TW><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt;font-family:PMingLiU;font-size:12.0pt' lang=zh-TW>回覆</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="https://www.blogger.com/profile/04294915385378389760"><span
+     style='font-family:Calibri;font-size:12.0pt' lang=zh-TW>Li Yu</span></a><a
+     href="http://tw-hkt.blogspot.com/2017/01/linux-1.html?showComment=1529724364660#c6879589173689703925"><span
+     style='font-family:PMingLiU;font-size:12.0pt' lang=zh-TW>星期六</span><span
+     style='font-family:Calibri;font-size:12.0pt' lang=en-US>, 6</span><span
+     style='font-family:PMingLiU;font-size:12.0pt' lang=en-US>月</span><span
+     style='font-family:Calibri;font-size:12.0pt' lang=en-US> 23, 2018 11:26:00
+     </span><span style='font-family:PMingLiU;font-size:12.0pt' lang=en-US>上午</span></a><span
+     style='font-family:Calibri;font-size:12.0pt' lang=zh-TW><br>
+          </span><span style='font-family:PMingLiU;font-size:12.0pt'
+     lang=zh-TW>谢谢分享！</span><span style='font-family:Calibri;font-size:12.0pt'
+     lang=en-US><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt' lang=zh-TW>回覆</span></a><a
+     href="https://www.blogger.com/delete-comment.g?blogID=2812925102198947622&amp;postID=6879589173689703925"><span
+     style='font-family:PMingLiU;font-size:12.0pt' lang=zh-TW>刪除</span></a><span
+     style='font-family:Calibri;font-size:12.0pt' lang=zh-TW><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt' lang=zh-TW>回覆</span></a><span style='font-family:Calibri;
+     font-size:12.0pt' lang=zh-TW><br>
+          </span><a href="javascript:;"><span style='font-family:PMingLiU;
+     font-size:12.0pt' lang=zh-TW>回覆</span></a></li>
+</ol>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="javascript:;">新增留言</a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>載入更多…</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><span
+style='font-weight:bold'>張貼留言</span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>回覆意見時，麻煩輸入一下暱稱</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>(隨便取個名字也好~ ^_^)</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>好讓我方便回覆您的問題，</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>選擇「名稱/網址」輸入您的暱稱，</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>麻煩一下，謝謝大家。</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>這個網誌中的熱門文章 </span></p>
+
+<p style='margin:0in;font-family:Calibri'><a
+href="http://tw-hkt.blogspot.com/2010/02/8007000.html"><span style='font-weight:
+bold;font-size:16.0pt'>16天記下7000單字</span></a></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'
+lang=zh-TW>作者： </span><a href="https://plus.google.com/106315661421751933087"><span
+style='font-family:PMingLiU' lang=zh-TW>侯光燦 </span></a><span style='font-family:
+Calibri' lang=zh-TW>- </span><a
+href="http://tw-hkt.blogspot.com/2010/02/8007000.html"><span style='font-family:
+Calibri' lang=zh-TW>2</span><span style='font-family:PMingLiU' lang=zh-TW>月</span><span
+style='font-family:Calibri' lang=en-US> 04, 2010</span><span style='font-family:
+Calibri' lang=zh-TW> </span></a></p>
+
+<p style='margin:0in'><a href="http://tw-hkt.blogspot.com/2010/02/8007000.html"><img
+src="file7721.files/image003.png" width=640 height=313 alt=圖片></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>最近剛好在看7000單字，正不知道怎麼下手來解碼這龐大的一隻害蟲，
+在網路上正好看到了這個「800個句子背下7000個單詞」，又名「16天記下7000單字」，
+顧名思義一天只要看懂50個句子，16天後就可以看懂800個句子也記下7000個單字。</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>感覺好像還蠻厲害的。但出處不明，不知那個好心人士分享的，所以我也無法註明出處，
+這點到是有點可惜。 </p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>相關文章:</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2010/02/8007000.html">16天記下7000單字</a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2009/11/1007000.html">傳說中的100句英語可以幫你背7000單詞-公開大解密</a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2011/01/7000.html">傳說中的7000單字由來??? </a></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>800個有趣句子幫你記憶7000個單字
+1. With my own ears I clearly heard the heart beat of the nuclear bomb. </span><span
+style='font-family:PMingLiU'>我親耳清楚地聽到原子彈的心臟的跳動。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>2.
+Next year the bearded bear will bear a dear baby in the rear. </span><span
+style='font-family:PMingLiU'>明年，長鬍子的熊將在後方產一頭可愛的小崽。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>3.
+Early I searched through the earth for earthenware so as to research in
+earthquake. </span><span style='font-family:PMingLiU'>早先我在泥土中搜尋陶器以研究地震。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>4. I
+learn that learned earnest men earn much by learning. </span><span
+style='font-family:PMingLiU'>我得知有學問而認真的人靠學問掙很多錢。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>5. She
+swears to wear the pearls that appear to be pears. </span><span
+style='font-family:PMingLiU'>她發誓要戴那些看起來像梨子的珍珠。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>6. I
+nearly fear to tear the tearful girl's test paper. </span><span
+style='font-family:PMingLiU'>我幾乎害怕撕那個淚流滿面的女孩的試卷。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>7. The
+bold folk fold up the gold and hold it in hand. </span><span style='font-family:
+PMingLiU'>大膽的人們將黃金折疊起來拿在手裡。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>8. The
+customers are accustomed to the disgusting custom. </span><span
+style='font-family:PMingLiU'>顧客們習慣了令人討厭的風俗。 </span></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>9. The
+dust in the industrial zone frustrated the industrious man. </span><span
+style='font-family:PMingLiU'>工業區裡的灰塵使勤勉的人灰心。 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>10. The just bu… </p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2010/02/8007000.html">閱讀完整內容 </a></p>
+
+<p style='margin:0in;font-family:Calibri'><a
+href="http://tw-hkt.blogspot.com/2017/10/2017-android.html"><span
+style='font-weight:bold;font-size:16.0pt'>2018 Android 教學 中文開放式課程 目錄</span></a></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'
+lang=zh-TW>作者： </span><a href="https://plus.google.com/106315661421751933087"><span
+style='font-family:PMingLiU' lang=zh-TW>侯光燦 </span></a><span style='font-family:
+Calibri' lang=zh-TW>- </span><a
+href="http://tw-hkt.blogspot.com/2017/10/2017-android.html"><span
+style='font-family:Calibri' lang=zh-TW>1</span><span style='font-family:PMingLiU'
+lang=zh-TW>月</span><span style='font-family:Calibri' lang=en-US> 20, 2018</span><span
+style='font-family:Calibri' lang=zh-TW> </span></a></p>
+
+<p style='margin:0in'><a
+href="http://tw-hkt.blogspot.com/2017/10/2017-android.html"><img
+src="file7721.files/image004.png" width=640 height=404 alt=圖片></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2017/10/2017-android.html#more">閱讀完整內容 </a></p>
+
+<p style='margin:0in;font-family:Calibri'><a
+href="http://tw-hkt.blogspot.com/2012/11/blog-post.html"><span
+style='font-weight:bold;font-size:16.0pt'>簡體 轉 繁體 免安裝綠色小程式</span></a></p>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'
+lang=zh-TW>作者： </span><a href="https://plus.google.com/106315661421751933087"><span
+style='font-family:PMingLiU' lang=zh-TW>侯光燦 </span></a><span style='font-family:
+Calibri' lang=zh-TW>- </span><a
+href="http://tw-hkt.blogspot.com/2012/11/blog-post.html"><span
+style='font-family:Calibri' lang=zh-TW>11</span><span style='font-family:PMingLiU'
+lang=zh-TW>月</span><span style='font-family:Calibri' lang=en-US> 03, 2012</span><span
+style='font-family:Calibri' lang=zh-TW> </span></a></p>
+
+<p style='margin:0in'><a
+href="http://tw-hkt.blogspot.com/2012/11/blog-post.html"><img
+src="file7721.files/image005.png" width=333 height=363 alt=圖片></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>程式名稱:馴碼快手</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://tw-hkt.blogspot.com/2012/11/blog-post.html#more">閱讀完整內容 </a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="https://www.blogger.com">技術提供：Blogger </a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>主題圖片來源：<a
+href="http://www.offset.com/photos/394244">Michael Elkan </a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>Kotlin 線上教學課程目錄 </span></p>
+
+<p style='margin:0in'><a
+href="http://tw-hkt.blogspot.com/2018/11/kotlin_57.html"><img
+src="file7721.files/image006.png" width=388 height=431 alt="Kotlin 線上教學課程目錄"></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>從零開始學 Kotlin 程式設計 </p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>文章標籤 </span></p>
+
+<ul type=disc style='margin-left:.375in;direction:ltr;unicode-bidi:embed;
+ margin-top:0in;margin-bottom:0in'>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/3C%E9%96%8B%E7%AE%B1%E6%96%87"><span
+     style='font-family:Calibri;font-size:12.0pt'>3C開箱文</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%A5%BD%E5%BA%B7%E7%9A%84"><span
+     style='font-family:Calibri;font-size:12.0pt'>好康的</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E6%88%91%E6%80%9D%E6%95%85%E6%88%91%E5%9C%A8"><span
+     style='font-family:Calibri;font-size:12.0pt'>我思故我在</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E9%9F%B3%E6%A8%82"><span
+     style='font-family:Calibri;font-size:12.0pt'>音樂</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8%20Android%20%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88"><span
+     style='font-family:Calibri;font-size:12.0pt'>從零開始學 Android 程式設計</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8%20Kotlin%20%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88"><span
+     style='font-family:Calibri;font-size:12.0pt'>從零開始學 Kotlin 程式設計</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%8D%9A%E5%AE%A2%E4%BE%86"><span
+     style='font-family:Calibri;font-size:12.0pt'>博客來</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E9%9B%B2%E7%AB%AF%E9%81%8B%E7%AE%97"><span
+     style='font-family:Calibri;font-size:12.0pt'>雲端運算</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%BE%AE%E8%BB%9F"><span
+     style='font-family:Calibri;font-size:12.0pt'>微軟</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E6%84%9B%E6%8B%8D%E6%8B%8D"><span
+     style='font-family:Calibri;font-size:12.0pt'>愛拍拍</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E9%9D%A0%E5%8C%97%E5%B7%A5%E7%A8%8B%E5%B8%AB"><span
+     style='font-family:Calibri;font-size:12.0pt'>靠北工程師</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/%E5%AD%B8%E7%BF%92%E8%8B%B1%E8%AA%9E"><span
+     style='font-family:Calibri;font-size:12.0pt'>學習英語</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Android"><span
+     style='font-family:Calibri;font-size:12.0pt'>Android</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Android%20%E7%A8%8B%E5%BC%8F%E7%A2%BC%E4%BE%BF%E5%88%A9%E8%B2%BC"><span
+     style='font-family:Calibri;font-size:12.0pt'>Android 程式碼便利貼</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Android%20%E9%96%8B%E7%99%BC%E6%95%99%E5%AD%B8"><span
+     style='font-family:Calibri;font-size:12.0pt'>Android 開發教學</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Android%20Studio%20%E4%B8%AD%E6%96%87%E9%96%8B%E6%94%BE%E5%BC%8F%E8%AA%B2%E7%A8%8B"><span
+     style='font-family:Calibri;font-size:12.0pt'>Android Studio 中文開放式課程</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/ASP"><span style='font-family:
+     Calibri;font-size:12.0pt'>ASP</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/C%E8%AA%9E%E8%A8%80"><span
+     style='font-family:Calibri;font-size:12.0pt'>C語言</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Debug%28%E8%AB%B8%E5%85%AB%E5%93%A5%29"><span
+     style='font-family:Calibri;font-size:12.0pt'>Debug(諸八哥)</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Django"><span
+     style='font-family:Calibri;font-size:12.0pt'>Django</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Expression%20Blend"><span
+     style='font-family:Calibri;font-size:12.0pt'>Expression Blend</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Expression%20Design"><span
+     style='font-family:Calibri;font-size:12.0pt'>Expression Design</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/html"><span
+     style='font-family:Calibri;font-size:12.0pt'>html</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/iOS"><span style='font-family:
+     Calibri;font-size:12.0pt'>iOS</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/jQuery"><span
+     style='font-family:Calibri;font-size:12.0pt'>jQuery</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Kinect"><span
+     style='font-family:Calibri;font-size:12.0pt'>Kinect</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Linux"><span
+     style='font-family:Calibri;font-size:12.0pt'>Linux</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/node.js"><span
+     style='font-family:Calibri;font-size:12.0pt'>node.js</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Parse"><span
+     style='font-family:Calibri;font-size:12.0pt'>Parse</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/phonegap"><span
+     style='font-family:Calibri;font-size:12.0pt'>phonegap</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/PHP"><span style='font-family:
+     Calibri;font-size:12.0pt'>PHP</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Ptt%20BBS"><span
+     style='font-family:Calibri;font-size:12.0pt'>Ptt BBS</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Python"><span
+     style='font-family:Calibri;font-size:12.0pt'>Python</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Server"><span
+     style='font-family:Calibri;font-size:12.0pt'>Server</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Silverlight"><span
+     style='font-family:Calibri;font-size:12.0pt'>Silverlight</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/TOEIC%20990%20%E9%BB%83%E9%87%91%E4%B9%8B%E8%B7%AF"><span
+     style='font-family:Calibri;font-size:12.0pt'>TOEIC 990 黃金之路</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/TW-%20HKT%20%E7%89%88%E5%8B%99"><span
+     style='font-family:Calibri;font-size:12.0pt'>TW- HKT 版務</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/UI%2FUX"><span
+     style='font-family:Calibri;font-size:12.0pt'>UI/UX</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/ukulele"><span
+     style='font-family:Calibri;font-size:12.0pt'>ukulele</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Unity"><span
+     style='font-family:Calibri;font-size:12.0pt'>Unity</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Visual%20C%23"><span
+     style='font-family:Calibri;font-size:12.0pt'>Visual C#</span></a></li>
+ <li style='margin-top:0;margin-bottom:0;vertical-align:middle'><a
+     href="http://tw-hkt.blogspot.com/search/label/Windows%20mobile"><span
+     style='font-family:Calibri;font-size:12.0pt'>Windows mobile</span></a></li>
+</ul>
+
+<p style='margin:0in;font-size:12.0pt'><span style='font-family:Calibri'>顯示更多 </span><span
+style='font-family:PMingLiU'>顯示較少 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>臉書粉絲團 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>廣告 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://www.bloggerads.net">BloggerAds 部落格行銷</a></p>
+
+<p style='margin:0in'><a
+href="http://js1.bloggerads.net/Click/1713622797.09eqyupa/20070610000001/20090530000051/2/63689096858/17058/2"><img
+src="file7721.files/image007.gif" width=200 height=363></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'><a
+href="http://www.bloggerads.net">BloggerAds 部落格行銷</a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>版權宣告 </span></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:12.0pt'>本部落格所分享之部份圖影片、文章或資料，引用自網路之轉寄分享，其著作權皆屬原作者所有，且儘量能註明出處與原作者，惟有時轉寄多次，可能原作已不復查證，故未及時註明，尚請原諒。如未予註明作者，或原著作者與分享者不同意轉貼，請立即告知，將立刻處理。
+</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:16.0pt'><span
+style='font-weight:bold'>贊助我們 </span></p>
+
+<p style='margin:0in'><a
+href="http://tw-hkt.blogspot.tw/2016/09/blog-post_30.html"><img
+src="file7721.files/image008.png" width=338 height=375 alt=贊助我們></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:18.0pt'><span
+style='font-weight:bold'>線上人數 </span></p>
+
+<p style='margin:0in'><a
+href="http://www.blogger.com/rearrange?blogID=2812925102198947622&amp;widgetType=HTML&amp;widgetId=HTML6&amp;action=editWidget&amp;sectionId=sidebar_bottom"><img
+src="file7721.files/image009.png" width=23 height=23></a></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:9.0pt;color:#666666'>插入自
+&lt;<a href="http://tw-hkt.blogspot.com/2017/01/linux-1.html">http://tw-hkt.blogspot.com/2017/01/linux-1.html</a>&gt;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>使用 Microsoft OneNote 2016 建立。</p>
+
+</div>
+
+</body>
+
+</html>
